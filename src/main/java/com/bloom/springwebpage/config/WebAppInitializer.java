@@ -5,7 +5,6 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
@@ -15,6 +14,7 @@ import javax.servlet.ServletRegistration;
  * тут буде створено DispatcherServlet
  */
 public class WebAppInitializer implements WebApplicationInitializer {
+
     private final static String DISPATCHER = "dispatcher";
 
     /**
@@ -28,8 +28,8 @@ public class WebAppInitializer implements WebApplicationInitializer {
         // реєструємо конфіг класи
         context.register(SpringConfig.class, WebConfig.class);
         // встановлюємо контекст
-//        context.setServletContext(servletContext);
-        servletContext.addListener(new ContextLoaderListener(context));
+        context.setServletContext(servletContext);
+//        servletContext.addListener(new ContextLoaderListener(context));
 
         ServletRegistration.Dynamic dispatcher = servletContext.addServlet(DISPATCHER, new DispatcherServlet(context));
         dispatcher.setLoadOnStartup(1);

@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/") // обробляв все починаючи від
 public class UserController {
+    @GetMapping("/")
+    public String index(){
+        return "index";
+    }
 
     @GetMapping("/hello") // оброблятиме за запитом
     public String hello(){ // назва шаблону що створений у views
