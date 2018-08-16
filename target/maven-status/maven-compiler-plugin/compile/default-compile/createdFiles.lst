@@ -1,1 +1,6 @@
+com\bloom\springwebpage\config\SpringConfig.class
 com\bloom\springwebpage\App.class
+com\bloom\springwebpage\Controller\UserController.class
+com\bloom\springwebpage\DAO\UserDAO.class
+com\bloom\springwebpage\Service\UserService.class
+com\bloom\springwebpage\Service\TestBean.class
