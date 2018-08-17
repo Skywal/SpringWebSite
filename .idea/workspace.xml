@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e79803-f38b-4a19-aa6c-cbf246778728" name="Default Changelist" comment="Add WebAppInitializer class with some configuration to set up app context on start up">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usersList.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/Controller/UserController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/DAO/UserDAO.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/DAO/UserDaoImpl.class" beforeDir="false" />
@@ -64,7 +64,7 @@
         <counts>
           <entry key="ftl" value="423" />
           <entry key="html" value="401" />
-          <entry key="java" value="5516" />
+          <entry key="java" value="5655" />
           <entry key="sql" value="203" />
           <entry key="txt" value="121" />
           <entry key="xml" value="382" />
@@ -74,7 +74,7 @@
         <counts>
           <entry key="DBN-SQL" value="203" />
           <entry key="HTML" value="450" />
-          <entry key="JAVA" value="5516" />
+          <entry key="JAVA" value="5655" />
           <entry key="PLAIN_TEXT" value="495" />
           <entry key="XML" value="382" />
         </counts>
@@ -96,7 +96,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="562">
@@ -140,19 +140,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+            <state relative-caret-position="411">
+              <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#getUserDao#0;class#SpringConfig#0" />
-                <element signature="e#1455#1456#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
-                <element signature="docComment;method#getUserService#0;class#SpringConfig#0" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,8 +198,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+            <state relative-caret-position="176">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#404#405#0" expanded="true" />
@@ -245,9 +239,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Service/UserServiceIml.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/showUser.html" />
@@ -256,6 +248,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/updateUser.ftl" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editUser.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" />
       </list>
     </option>
   </component>
@@ -641,34 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getUserDao#0;class#SpringConfig#0" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="docComment;method#getUserService#0;class#SpringConfig#0" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -738,6 +704,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="562">
@@ -749,6 +727,16 @@
             <element signature="docComment;method#getById#0;class#UserController#0" />
             <element signature="e#1603#1604#0" expanded="true" />
             <element signature="e#1627#1628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

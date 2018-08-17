@@ -5,6 +5,7 @@ import com.bloom.springwebpage.DAO.UserDaoImpl;
 import com.bloom.springwebpage.Service.UserService;
 import com.bloom.springwebpage.Service.UserServiceIml;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -12,6 +13,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
+// вказуємо де шукати потрібний Bean
+@ComponentScan(basePackages = {
+        "com.bloom.springwebpage.Service",
+        "com.bloom.springwebpage.DAO"
+})
 public class SpringConfig {
 
     /**
@@ -38,20 +44,4 @@ public class SpringConfig {
         return dataSource;
     }
 
-    /**
-     *  цей бін використовується у класі UserService
-     */
-    @Bean
-    public UserDAO getUserDao(){
-        return new UserDaoImpl(getJdbcTemplate());
-    }
-
-    /**
-     * Реалізація сервісу
-     * @return
-     */
-    @Bean
-    public UserService getUserService(){
-        return new UserServiceIml();
-    }
 }
