@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDAO {
 
     @Override
     public List<User> findAll() {
-        String sql = "SELECT * FROM user"; // повертає всі записи із таблиці "user"
+        String sql = "SELECT * FROM vebinar.user;"; // повертає всі записи із таблиці "user"
         return jdbcTemplate.query(sql, new UserMapper());
     }
 }
