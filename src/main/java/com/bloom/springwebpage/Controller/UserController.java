@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+
 /**
  * робота з веб, обробка запитів з template
  */
@@ -51,15 +52,36 @@ public class UserController {
         return "showUser";
     }
 
+    //region addUser
     @GetMapping("/addUser") // для обробки PostMapping /addUser
     public String createUserPage(){
         return "createUser";// назва view елементу
     }
-
     /** запроси будуть передаватися у невидимому вигляді у requestBody*/
     @PostMapping("/addUser") // додавання користувача
     public String addUser(@ModelAttribute("user") User user){
         userService.save(user);
         return "redirect:/users"; // перепосилає @Mapping users
     }
+    //endregion
+
+    @GetMapping("/delete/{id}")
+    public String deleteUser(@PathVariable("id") int id){
+        userService.delete(id);
+        return "redirect:/users";
+    }
+
+    //region updateUser
+    @PostMapping("/updateUser")
+    public String updateUser(@ModelAttribute("user") User user){
+        userService.update(user);
+        return "redirect:/user/" + user.getId();
+    }
+
+    @GetMapping("/update/{id}")
+    public String updateUser(@PathVariable("id") int id, Model model){
+        model.addAttribute("user", userService.getById(id));
+        return "editUser";
+    }
+    //endregion
 }

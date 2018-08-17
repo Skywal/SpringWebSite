@@ -44,7 +44,7 @@ public class UserDaoImpl implements UserDAO {
 
     @Override
     public void update(User user) {
-        String sql = "UPDATE user SET name=?, email=?, age=? WHERE id=?";
+        String sql = "UPDATE vebinar.user SET name=?, email=?, age=? WHERE id=?";
         jdbcTemplate.update(sql, user.getName(), user.getEmail(), user.getAge(), user.getId());
     }
 }
