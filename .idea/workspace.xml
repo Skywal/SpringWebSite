@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64e79803-f38b-4a19-aa6c-cbf246778728" name="Default Changelist" comment="Add WebAppInitializer class with some configuration to set up app context on start up">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/Controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/Controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/config/WebAppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/bloom/springwebpage/config/WebAppInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-08-16" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2018-08-16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +31,7 @@
           <entry key="class" value="1" />
           <entry key="ftl" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="13" />
+          <entry key="java" value="17" />
           <entry key="sql" value="3" />
           <entry key="xml" value="3" />
         </counts>
@@ -45,7 +41,7 @@
           <entry key="CLASS" value="1" />
           <entry key="DBN-SQL" value="3" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="13" />
+          <entry key="JAVA" value="17" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="3" />
         </counts>
@@ -54,7 +50,7 @@
         <counts>
           <entry key="ftl" value="66" />
           <entry key="html" value="122" />
-          <entry key="java" value="2036" />
+          <entry key="java" value="3157" />
           <entry key="sql" value="203" />
           <entry key="txt" value="121" />
           <entry key="xml" value="313" />
@@ -64,7 +60,7 @@
         <counts>
           <entry key="DBN-SQL" value="203" />
           <entry key="HTML" value="122" />
-          <entry key="JAVA" value="2036" />
+          <entry key="JAVA" value="3157" />
           <entry key="PLAIN_TEXT" value="187" />
           <entry key="XML" value="313" />
         </counts>
@@ -76,47 +72,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="79" selection-start-line="79" selection-end-line="79" />
+            <state relative-caret-position="870">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="616">
+              <caret line="28" column="109" selection-start-line="28" selection-start-column="109" selection-end-line="28" selection-end-column="109" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/WebAppInitializer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-              <folding>
-                <element signature="docComment;method#onStartup#0;class#WebAppInitializer#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="docComment;field#name#0;class#User#0" />
-                <element signature="docComment;field#email#0;class#User#0" />
-                <element signature="docComment;field#age#0;class#User#0" />
-                <element signature="docComment;field#id#0;class#User#0" />
-                <element signature="n#!!doc;n#getName#0;n#User#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="506">
+              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#404#405#0" expanded="true" />
+                <element signature="e#452#453#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,14 +133,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Service/TestBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/App.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello.ftl" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.ftl" />
@@ -154,6 +146,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/WebAppInitializer.java" />
         <option value="708e8d4c-9201-4ea9-b852-2b6717b639d6/consoles/Webinar" />
         <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Mapper/UserMapper.java" />
       </list>
     </option>
   </component>
@@ -184,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -253,6 +248,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="springwebpage" type="462c0819:PsiDirectoryNode" />
+              <item name="Mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demotest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demotest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="springwebpage" type="462c0819:PsiDirectoryNode" />
               <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -283,11 +287,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bloom.springwebpage.Mapper" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -430,13 +440,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add WebAppInitializer class with some configuration to set up app context on start up" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/App.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Service/TestBean.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -449,13 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="11" column="7" selection-start-line="8" selection-start-column="6" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -499,13 +495,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" current-schema="vebinar" session-id="MAIN" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="79" selection-start-line="79" selection-end-line="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -536,6 +525,55 @@
           <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
           <folding>
             <element signature="docComment;method#onStartup#0;class#WebAppInitializer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/config/SpringConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="109" selection-start-line="28" selection-start-column="109" selection-end-line="28" selection-end-column="109" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/Mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bloom/springwebpage/DAO/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#452#453#0" expanded="true" />
           </folding>
         </state>
       </provider>
