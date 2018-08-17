@@ -54,6 +54,7 @@
       <artifactId>spring-context-support</artifactId>
       <version>5.0.8.RELEASE</version>
     </dependency>
+    <!-- Template -->
     <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
     <dependency>
       <groupId>org.freemarker</groupId>
@@ -61,6 +62,7 @@
       <version>2.3.28</version>
     </dependency>
 
+    <!-- Servlet -->
     <!-- There was some servlet issue -->
     <!-- https://stackoverflow.com/questions/15328363/springservletcontainerinitializer-cannot-be-cast-to-javax-servlet-servletcontain -->
     <!--<dependency>-->
@@ -82,7 +84,12 @@
       <artifactId>spring-jdbc</artifactId>
       <version>4.3.10.RELEASE</version>
     </dependency>
-
+    <!-- Database -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>8.0.11</version>
+    </dependency>
 
   </dependencies>
 

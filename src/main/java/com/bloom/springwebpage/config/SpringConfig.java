@@ -31,7 +31,8 @@ public class SpringConfig {
     @Bean
     public DataSource getDataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/mysql?useSll=false"); //connection URL до бази даних та не використовувати Sll
+        dataSource.setUrl("jdbc:mysql://localhost:3306/mysql" +
+                "?useSll=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"); //connection URL до бази даних та не використовувати Sll
         dataSource.setUsername("root");
         dataSource.setPassword("Img147963");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
