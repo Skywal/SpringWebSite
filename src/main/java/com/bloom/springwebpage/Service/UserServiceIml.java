@@ -9,6 +9,8 @@ import java.util.List;
 
 /**
  * це все виконується через рівень контролерів
+ * рівень бізнес логіки
+ * тут може бути наприклад валідація
  */
 @Service
 public class UserServiceIml implements UserService {
