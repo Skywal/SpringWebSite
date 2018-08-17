@@ -1,6 +1,7 @@
 com\bloom\springwebpage\config\SpringConfig.class
 com\bloom\springwebpage\config\WebAppInitializer.class
 com\bloom\springwebpage\config\WebConfig.class
+com\bloom\springwebpage\Entity\User.class
 com\bloom\springwebpage\DAO\UserDAO.class
 com\bloom\springwebpage\Controller\UserController.class
 com\bloom\springwebpage\Service\UserService.class
