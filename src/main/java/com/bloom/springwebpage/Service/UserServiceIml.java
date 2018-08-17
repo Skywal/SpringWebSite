@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * це все виконується через рівень контролерів
+ */
 @Service
 public class UserServiceIml implements UserService {
 
@@ -19,5 +22,25 @@ public class UserServiceIml implements UserService {
     @Override
     public List<User> findAll() {
         return userDAO.findAll();
+    }
+
+    @Override
+    public void save(User user) {
+        userDAO.save(user);
+    }
+
+    @Override
+    public User getById(int id) {
+        return userDAO.getById(id);
+    }
+
+    @Override
+    public void delete(int id) {
+        userDAO.delete(id);
+    }
+
+    @Override
+    public void update(User user) {
+        userDAO.update(user);
     }
 }

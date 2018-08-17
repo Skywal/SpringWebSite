@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -39,5 +40,15 @@ public class UserController {
     public String getAllUsers(Model model){ // model потрібна для передачі даних між view та
         model.addAttribute("users", userService.findAll()); // далі потрібно у views обробити userList
         return "usersList";
+    }
+
+    /**
+     * обробка запросів від посилання у таблиці користувачів userList на конкретного користувача
+     * @return
+     */
+    @GetMapping("/user/{id}")
+    public String getById(@PathVariable("id") int id, Model model){
+        model.addAttribute("user", userService.getById(id));
+        return "showUser";
     }
 }

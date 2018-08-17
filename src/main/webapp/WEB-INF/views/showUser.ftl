@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>User info</title>
 </head>
 <body>
-<h1>Users list</h1>
+<h2>User info</h2>
 <table>
     <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Age</th>
+        <td>Id</td>
+        <td>${user.id}</td>
     </tr>
-<#list users as user>
     <tr>
-        <td><a href="/user/${user.id}">${user.id}</a></td>
+        <td>Name</td>
         <td>${user.name}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
         <td>${user.email}</td>
+    </tr>
+    <tr>
+        <td>Age</td>
         <td>${user.age}</td>
     </tr>
-</#list>
 </table>
+<br>
+
+<a href="/users">Back</a>
 </body>
 </html>

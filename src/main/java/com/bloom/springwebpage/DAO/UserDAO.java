@@ -14,4 +14,9 @@ public interface UserDAO {
      * @return List всіх користувачів із БД
      */
     List<User> findAll();
+
+    void save(User user);
+    User getById(int id);
+    void delete(int id);
+    void update(User user);
 }
