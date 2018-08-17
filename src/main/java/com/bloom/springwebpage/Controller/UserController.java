@@ -1,7 +1,10 @@
 package com.bloom.springwebpage.Controller;
 
 
+import com.bloom.springwebpage.Service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,6 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/") // обробляв все починаючи від
 public class UserController {
+
+    @Autowired // використання відповідного Bean
+    public UserService userService;
+
     /**
      * обробка пустого рядка на старті
      */
@@ -26,5 +33,11 @@ public class UserController {
     @GetMapping("/hello") // оброблятиме за запитом
     public String hello(){ // назва шаблону що створений у views
         return "hello";
+    }
+
+    @GetMapping("/users")
+    public String getAllUsers(Model model){ // model потрібна для передачі даних між view та
+        model.addAttribute("users", userService.findAll()); // далі потрібно у views обробити userList
+        return "usersList";
     }
 }

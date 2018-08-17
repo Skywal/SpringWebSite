@@ -1,6 +1,9 @@
 package com.bloom.springwebpage.config;
 
-import com.bloom.springwebpage.Service.TestBean;
+import com.bloom.springwebpage.DAO.UserDAO;
+import com.bloom.springwebpage.DAO.UserDaoImpl;
+import com.bloom.springwebpage.Service.UserService;
+import com.bloom.springwebpage.Service.UserServiceIml;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,10 +13,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class SpringConfig {
-//    @Bean
-//    public TestBean getTestBean(){
-//        return new TestBean("Hello!");
-//    }
 
     /**
      * робота із БД через інтерфейс UserDAO
@@ -37,5 +36,22 @@ public class SpringConfig {
         dataSource.setPassword("Img147963");
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
         return dataSource;
+    }
+
+    /**
+     *  цей бін використовується у класі UserService
+     */
+    @Bean
+    public UserDAO getUserDao(){
+        return new UserDaoImpl(getJdbcTemplate());
+    }
+
+    /**
+     * Реалізація сервісу
+     * @return
+     */
+    @Bean
+    public UserService getUserService(){
+        return new UserServiceIml();
     }
 }
